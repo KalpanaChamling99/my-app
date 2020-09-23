@@ -1,7 +1,7 @@
 
 import React,{Component} from 'react';
 import './App.css';
-// import TogglePerson from './EventHandling/toggle';
+// import TogglsePerson from './EventHandling/toggle';
 // import SwitchName from './EventHandling/switchName';
 // import NameChange from './EventHandling/nameChange';
 // import DeleteName from './EventHandling/delete';
@@ -62,8 +62,6 @@ class App extends Component{
   
 
   render(){
-    
-
     let personList = null;
     if(this.state.showPersonDetail){
       personList = (
@@ -85,8 +83,6 @@ class App extends Component{
         {/* <SwitchName /> */}
         {/* <NameChange /> */}
         {/* <DeleteName /> */}
-        
-
       </div>
     )
   }

@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
-const button = (props) => {
-    // useEffect(()=>{
+const Button = props => {
+    useEffect(()=>{
         console.log("use effect");
-    // });
-    return <button onClick={props.click}>Toggle person</button>
+        setTimeout(()=>{
+            alert('hello world');
+        },1000); 
+    },[ ]);
     
+    return <button onClick={props.click}>Toggle person</button>
 }
-export default button;
+export default Button;
