@@ -13,6 +13,10 @@ class PersonList extends Component{
     console.log('[personList.js] component did update');
     console.log(snapshot);
   }
+  componentWillUnmount(){
+    console.log('[personList.js] componentwill unmount');
+  }
+
   render(){
     console.log("rendering....");
     return (

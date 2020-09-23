@@ -14,7 +14,8 @@ class App extends Component{
       {id:"1a",name:"Kalpana Rai",address:"Pathari"},
       {id:"2a",name:"Madhu",address:"Dharan"},
     ],
-    showPersonDetail: false
+    showPersonDetail: false,
+    showButton: true
   }
   static getDerivedStateFromProps(props,state){
     console.log("[App.js] get derived state",props);
@@ -76,7 +77,10 @@ class App extends Component{
     }
     return(
       <div>
-        <Button click={this.togglePersonHandler} />
+        <button onClick={()=>{
+          this.setState({showButton: false});
+        }}>Remove toggle button </button>
+        {this.state.showButton? <Button click={this.togglePersonHandler} /> :null}
         {personList}
         {/* <h2 class="title">Event handling</h2> */}
         {/* <TogglePerson /> */}
