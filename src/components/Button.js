@@ -6,6 +6,7 @@ const Button = props => {
             alert('hello world');
         },1000);
         return() =>{
+            // clearTimeout(timer);
             console.log('[Button.js] clean up work in use effect')
         } 
     },[]);
